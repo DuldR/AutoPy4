@@ -8,8 +8,13 @@ grid = [['.', '.', '.', '.', '.', '.'],
         ['.', 'O', 'O', '.', '.', '.'],
         ['.', '.', '.', '.', '.', '.']]
 
-c = 0
 
-for i in grid:
-    endGrid = len(grid) - 1
-    for
+#Setting grid x coordinate to be iterated upon
+for j in range(len(grid[0])):
+    #Iterate over the y coordinate
+    for i in range(len(grid)):
+        #print on a single line
+        print(grid[i][j], end="")
+
+    #Start a new line.
+    print()
